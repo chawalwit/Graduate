@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Sarabun&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9bee24d64d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="balloon.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#section1">Homepage</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item"><!--active-->
+                    <a class="nav-link" href="#section2">Calendar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section3">Map</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section4">About Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid" id="section1">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>ยินดีต้อนรับเข้าสู่เว็บไซต์<span class="hidden-text"> (งานรับปริญญา) </span>ของ</h2>
+                <h1>ชวัลวิทย์ ณรงค์พันธ์</h1>
+            </div>
+        </div>
+    </div>
+    <div id="arrowAnim">
+        <div class="arrowSliding">
+            <div class="arrow"></div>
+        </div>
+        <div class="arrowSliding delay1">
+            <div class="arrow"></div>
+        </div>
+        <div class="arrowSliding delay2">
+            <div class="arrow"></div>
+        </div>
+        <div class="arrowSliding delay3">
+            <div class="arrow"></div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="section2">
+        <div class="month">      
+            <ul>
+                <li>
+                    <h2>Calendar เวลาไหนบ้าง?</h2>
+                    <br>
+                    <span style="font-size:18px">November 2020</span>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="weekdays">
+            <li>Su</li>
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+        </ul>
+
+        <ul class="days">  
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li class="event-day" data-balloon-length="fit" aria-label="ซ้อมรับปริญญาครั้งที่ 1 เจอกันได้ทั้งช่วงเช้า (9.00-12.00น.) และช่วงบ่าย (14.00-17.00น.) เจอกันที่ตึก fibo" data-balloon-pos="up-right">7</li>
+            <li class="event-day" data-balloon-length="fit" aria-label="ซ้อมรับปริญญาครั้งที่ 2 เจอกันได้ทั้งช่วงเช้า (9.00-12.00น.) และช่วงบ่าย (14.00-17.00น.) เจอกันที่ตึก fibo" data-balloon-pos="up-right">8</li>
+            <li>9</li>
+            <li class="event-day" data-balloon-length="fit" aria-label="ซ้อมใหญ่รับปริญญา ไม่ว่างน้าา แต่อาจจะไปหาได้ ...(*￣０￣)ノ" data-balloon-pos="up-right"><span class="active">10</span></li>
+            <li>11</li>
+            <li class="event-day" data-balloon-length="fit" aria-label="วันรับปริญญา จะว่างช่วงบ่าย (14.00-17.00น.) มาเจอกันได้ๆ ที่ไบเทคบางนา" data-balloon-pos="up-right">12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li>31</li>
+        </ul>
+    </div>
+
+    <div class="border-edit"></div>
+
+    <div class="container-fluid" id="section3">
+        <div class="row">
+            <div class="black-box">
+                <!--<div class="black-box"></div>-->
+                <div class="content">
+                    <h2>FIBO อยู่ตรงไหน?</h2>
+                    <div class="border-edit2"></div>
+                    <a href="images/bangmod-map.png" class="map" data-toggle="lightbox">
+                        <img src="images/bangmod-map.jpg" class="map" alt="" class="img-fluid">
+                        <img src="images/arrow.png" alt="" class="animate animate-arrow">
+                        <p class="animate animate-arrow arrow-text">ที่ตึกฟีโบ้ ตามเวลาในตารางได้เลย</p>
+                        <img src="images/circle.png" alt="" class="animate animate-circle">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="section4">
+        <h1>CONTACT ME</h1>
+        <button type="button" class="btn btn-dark btn-lg email-button" data-clipboard-text="chawalwit.na@gmail.com">Get email contact <i class="far fa-envelope"></i></button>
+        <!--<ul>
+            <li><p><i class="fab fa-facebook-square"></i> Chawalwit Narongphan</p></li>
+            <li><i class="fas fa-phone-square-alt"></i> 086-312-7022</p></li>
+        </ul>-->
+        <p class="contact-social"><i class="fab fa-facebook-square"></i> Chawalwit Narongphan <i class="fas fa-phone-square-alt pl-4"></i> 086-312-7022</p>
+        <p class="note">This website is underconstruction something might not work as well</p>
+        <p class="d-none">chawalwit.na@gmail.com</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script>
+        $(document).on('click','[data-toggle="lightbox"]',function(e){
+            e.preventDefault();
+            $(this).ekkoLightbox();
+        })
+    </script>
+</body>
+</html>
