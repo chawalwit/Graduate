@@ -6,17 +6,14 @@ body{
     background-color:#fcf1f1;
 }
 
-h1, h2, p {
-    /*font-family: 'Sarabun', sans-serif;*/
-    font-family: 'Chonburi', cursive;
+h1, h2{
+    /*font-family: 'Chonburi', cursive;*/
+    font-family: 'Pridi', serif;
 }
 
-/*html{
-    font-family: 'Sarabun', sans-serif !important;
+้้h5, p {
+    font-family: 'Sarabun', sans-serif;
 }
-html:lang(en-EN){
-    font-family: 'Chonburi', cursive !important;
-}*/
 
 #navbarSupportedContent {
     justify-content: flex-end;
@@ -34,13 +31,17 @@ ul {
     padding: 7%;
     background-color: #f9813a;
     line-height: 1.5;
-    font-size: 3rem;
+    /*font-size: 3rem;*/
     color: #fcf1f1;
     background-image: url("images/test-background3.png");
     background-repeat: no-repeat;
     background-position: right; 
     height: 30rem;
     background-position-y: 30%;
+}
+
+#section1 .subtext{
+    color: #ffd5cd;
 }
 
 #section1 div div h1{
@@ -57,15 +58,36 @@ ul {
     color: #fcf1f1;
 }
 
+#section3-2{
+    padding: 3.5% 7%;
+}
+
+#section3-2 div .row{
+    padding: 7% 0%;;
+}
+
 #section4 {
+    padding: 7%;
     background-color: #f9813a;
     color: #fcf1f1;
-    /*color: #1A1C20;*/
+}
+
+#section5 {
+    background-color: #f9813a;
+    color: #fcf1f1;
     padding: 7%;
     text-align: center;  
     line-height: 3;
     margin-top: 2.5rem;
     position: relative;
+}
+
+.card {
+    color: #1A1C20;
+}
+
+.color-white-theme{
+    color: #fcf1f1;
 }
 
 .contact-social {
@@ -75,20 +97,9 @@ ul {
     margin: 0;
 }
 
-/*#section4 ul {
-    list-style-type: none;
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    height: 3rem;
+.start-button {
+    margin: 0.5rem 0;
 }
-
-#section4 ul li {
-    padding: 0 1rem;
-}*/
 
 .border-edit{
     border-style: none none dotted none;
@@ -107,11 +118,29 @@ ul {
     border-width: 0px 0px 1px;
 }
 
+.border-edit3{
+    border-style: none none solid none;
+    border-width: 0.5rem;
+    width: 40rem;
+    margin: 1.5rem auto 1rem;
+    border-color:  #1A1C20;
+    border-width: 0px 0px 1px;
+}
+
+.padding-icon{
+    padding: 0 0.3rem;
+}
+
 .note{
     position: absolute;
     right: 1rem;
     bottom: 0;
     margin: 0;
+}
+
+.line-height-1-5{
+    margin-top: 1rem;
+    line-height: 1.5;
 }
 
 .black-box{
@@ -213,7 +242,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -2.5rem;
+    margin-top: 2.5rem;
 }
 
 .arrow {
