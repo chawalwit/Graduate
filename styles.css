@@ -63,7 +63,7 @@ ul {
 }
 
 #section3-2 div .row{
-    padding: 7% 0%;;
+    padding: 0 0% 7%;
 }
 
 #section4 {
@@ -80,6 +80,10 @@ ul {
     line-height: 3;
     margin-top: 2.5rem;
     position: relative;
+}
+
+.padding-extra{
+    padding-top: 7% !important;
 }
 
 .card {
@@ -290,6 +294,15 @@ ul {
 
 /* responsive */
 
+.spare{
+    display: none;
+}
+
+.md-show,.sm-show {
+    display: none;
+}
+
+
 @media (max-width: 1024px){
     #section1{
         background-position-x:175%;
@@ -322,6 +335,12 @@ ul {
     .email-button {
         margin-top: 1rem;
     }
+    .md-none {
+        display: none;
+    }
+    .md-show {
+        display: inline;
+    }
 }
 
 @media (max-width:767px){
@@ -334,11 +353,32 @@ ul {
     #section1{
         height: 15rem;
     }
+    #section3-2{
+        margin-top: 2rem;
+    }
+    .border-edit2{
+        width: 8rem;
+    }
+    .border-edit3{
+        width: 8rem;
+    }
     .map{
         width: 18rem;
     }
     .email-button {
         margin: 0;
+    }
+    .spare{
+        display: block;
+    }
+    .unspare{
+        display: none;
+    }
+    .sm-show{
+        display: inline;
+    }
+    #section3-2 div .row div:first-child {
+        padding: 0 0 7%;
     }
 }
 
